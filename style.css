@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+/* Global App Container */
+.stApp {
+    background: radial-gradient(circle at top right, #1e1b4b 0%, #0b0f19 50%, #020617 100%) !important;
+    color: #e2e8f0 !important;
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Sidebar Styling */
+section[data-testid="stSidebar"] {
+    background-color: #0b0f19 !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+section[data-testid="stSidebar"] * {
+    color: #f1f5f9 !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] code {
+    background: rgba(0, 0, 0, 0.3) !important;
+    color: #c084fc !important;
+    padding: 2px 6px !important;
+    border-radius: 4px !important;
+}
+
+/* Typography Colors */
+h1, h2, h3, h4, h5, h6 {
+    color: #cbd5e1 !important;
+    font-weight: 700 !important;
+}
+
+/* Custom Main Header */
+.main-header {
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.12) 0%, rgba(99, 102, 241, 0.12) 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    padding: 40px 30px !important;
+    border-radius: 24px !important;
+    text-align: center !important;
+    margin-bottom: 35px !important;
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.3) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+}
+
+.main-header h1 {
+    background: linear-gradient(90deg, #c084fc 0%, #818cf8 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-weight: 800 !important;
+    font-size: 2.8rem !important;
+    margin-bottom: 10px !important;
+}
+
+.main-header p {
+    color: #94a3b8 !important;
+    font-size: 1.15rem !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.03em !important;
+}
+
+/* Metric Containers (Glassmorphism + Glow Hover) */
+[data-testid="metric-container"] {
+    background: rgba(255, 255, 255, 0.02) !important;
+    border-radius: 16px !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-left: 6px solid #a855f7 !important;
+    padding: 20px 18px !important;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+[data-testid="metric-container"]:hover {
+    transform: translateY(-4px) !important;
+    border-color: rgba(168, 85, 247, 0.4) !important;
+    box-shadow: 0 12px 40px 0 rgba(168, 85, 247, 0.18) !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: #f8fafc !important;
+    font-weight: 800 !important;
+    font-size: 2rem !important;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #94a3b8 !important;
+    font-size: 0.9rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+}
+
+/* Action Buttons */
+.stButton>button {
+    width: 100% !important;
+    background: linear-gradient(90deg, #a855f7 0%, #6366f1 100%) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 12px !important;
+    height: 50px !important;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.25) !important;
+}
+
+.stButton>button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 24px rgba(168, 85, 247, 0.4) !important;
+    border: none !important;
+    background: linear-gradient(90deg, #b55fe6 0%, #7073f5 100%) !important;
+}
+
+.stButton>button:active {
+    transform: translateY(0px) !important;
+    box-shadow: 0 4px 10px rgba(168, 85, 247, 0.3) !important;
+}
+
+/* Text Inputs / Text Area */
+textarea {
+    background-color: rgba(15, 23, 42, 0.6) !important;
+    color: #f1f5f9 !important;
+    border-radius: 14px !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    padding: 15px !important;
+    transition: all 0.3s ease !important;
+}
+
+textarea:focus {
+    border-color: #a855f7 !important;
+    box-shadow: 0 0 0 2px rgba(168, 85, 247, 0.2) !important;
+}
+
+/* Custom UI Component: Cards */
+.result-card {
+    background: rgba(255, 255, 255, 0.02) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 18px !important;
+    padding: 25px !important;
+    margin-bottom: 25px !important;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    transition: border-color 0.3s ease !important;
+}
+
+.result-card:hover {
+    border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Sentiment Badge tags */
+.sentiment-badge {
+    display: inline-block !important;
+    font-size: 1.2rem !important;
+    font-weight: 800 !important;
+    padding: 10px 24px !important;
+    border-radius: 9999px !important;
+    letter-spacing: 0.06em !important;
+    text-transform: uppercase !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2) !important;
+}
+
+/* Dataframe containers */
+.stDataFrame {
+    background: rgba(255, 255, 255, 0.01) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 14px !important;
+    padding: 10px !important;
+}
+
+/* Progress Bar override */
+.stProgress > div > div {
+    background: linear-gradient(90deg, #a855f7, #6366f1) !important;
+}
+
+/* Streamlit defaults hiding */
+#MainMenu, footer, header {
+    visibility: hidden !important;
+}
