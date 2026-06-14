@@ -26,7 +26,3 @@ huggingface/
 # Streamlit
 .streamlit/
 
-# Datasets
-data/*.csv
-data/*.xlsx
-data/*.zip
