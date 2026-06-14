@@ -1,8 +1,3 @@
-import sys
-import os
-import tf_keras
-sys.modules["keras"] = tf_keras
-os.environ["TF_USE_LEGACY_KERAS"] = "1"
 
 from pathlib import Path
 import pickle
